@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* #FAFAFA */
+    --foreground: 0 0% 13%; /* #212121 */
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 207 88% 77%; /* #90CAF9 */
+    --primary-foreground: 0 0% 13%;
+    --secondary: 207 88% 94%; /* #E3F2FD */
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 94%; /* #F0F0F0 */
+    --muted-foreground: 0 0% 45.1%; /* #757575 */
+    --accent: 288 48% 75%; /* #CE93D8 */
+    --accent-foreground: 0 0% 13%;
+    --destructive: 0 72% 51%; /* #C62828 */
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 88%; /* #E0E0E0 */
+    --input: 0 0% 88%;
+    --ring: 207 88% 77%;
+    
+    /* Scope Theme */
+    --scope-background: 220 20% 12%; /* Dark blue-gray */
+    --scope-grid: 180 50% 50% / 0.5; /* Cyan, semi-transparent */
+    --scope-grid-center: 180 50% 50% / 0.7; /* Brighter cyan for center lines */
+
+    /* Chart Colors */
+    --chart-1: 145 63% 49%; /* Green */
+    --chart-2: 350 84% 60%; /* Red */
+    --chart-3: 180 44% 52%; /* rgb(75, 192, 192) */
+    --chart-4: 30 100% 63%; /* rgb(255, 159, 64) */
+    --chart-5: 262 100% 70%; /* rgb(153, 102, 255) */
+    
+    --radius: 0.75rem; /* 12px */
+  }
+
+  .dark {
+    --background: 240 6% 10%; /* Darker than default dark */
+    --foreground: 0 0% 98%;
+    --card: 240 6% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 6% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 207 88% 77%;
+    --primary-foreground: 0 0% 13%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 288 48% 75%;
+    --accent-foreground: 0 0% 13%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 207 88% 77%;
+
+    /* Scope Theme */
+    --scope-background: 220 20% 12%;
+    --scope-grid: 180 50% 50% / 0.5;
+    --scope-grid-center: 180 50% 50% / 0.7;
+
+    /* Chart Colors */
+    --chart-1: 145 63% 49%;
+    --chart-2: 350 84% 60%;
+    --chart-3: 180 44% 52%;
+    --chart-4: 30 100% 63%;
+    --chart-5: 262 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
